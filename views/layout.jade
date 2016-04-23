@@ -1,0 +1,161 @@
+doctype html
+html
+  head
+    title= title
+    style(type='text/css').
+      .gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+    style(type='text/css').
+      .gm-style-pbc{transition:opacity ease-in-out;background-color:black;text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+    link(type='text/css', rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+    style(type='text/css').
+      .gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+    style(type='text/css').
+      @media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}
+    style(type='text/css').
+      .gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='/stylesheets/RISE/bootstrap-assets/css/bootstrap.min.css', rel='stylesheet')
+    // Style
+    link(href='/stylesheets/RISE/plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
+    link(href='/stylesheets/RISE/plugins/owl-carousel/owl.theme.css', rel='stylesheet')
+    link(href='/stylesheets/RISE/plugins/owl-carousel/owl.transitions.css', rel='stylesheet')
+    link(href='/stylesheets/RISE/plugins/Lightbox/dist/css/lightbox.css', rel='stylesheet')
+    link(href='/stylesheets/RISE/plugins/Icons/et-line-font/style.css', rel='stylesheet')
+    link(href='/stylesheets/RISE/plugins/animate.css/animate.css', rel='stylesheet')
+    link(href='/stylesheets/RISE/css/main.css', rel='stylesheet')
+    // Icons Font
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='/stylesheets/RISE/bootstrap-assets/js/bootstrap.min.js')
+    script(src='/stylesheets/RISE/js/custom.js')
+    // JS PLUGINS
+    script(src='/stylesheets/RISE/plugins/owl-carousel/owl.carousel.min.js')
+    script(src='/stylesheets/RISE/js/jquery.easing.min.js')
+    script(src='/stylesheets/RISE/plugins/waypoints/jquery.waypoints.min.js')
+    script(src='/stylesheets/RISE/plugins/countTo/jquery.countTo.js')
+    script(src='/stylesheets/RISE/plugins/inview/jquery.inview.min.js')
+    script(src='/stylesheets/RISE/plugins/Lightbox/dist/js/lightbox.min.js')
+    script(src='/stylesheets/RISE/plugins/WOW/dist/wow.min.js')
+    // GOOGLE MAP
+    script(src='https://maps.googleapis.com/maps/api/js')
+    
+  body
+    
+    //
+      Preloader
+      =============================================
+    .preloader
+      i.fa.fa-circle-o-notch.fa-spin.fa-2x
+    //
+      Welcome
+      =============================================
+    section#welcome
+      .container
+        h2
+          | 
+          span Ni un arbol menos
+        hr.sep
+        p Salvar a nuestros bosques depende de ti
+        //- img.img-responsive.center-block.wow.fadeInUp(data-wow-delay='.3s', src='img/welcome/logo.png', alt='logo')
+    //
+      Services
+      =============================================
+    section#services
+      .container
+        h2 Que es lo que hacemos
+        hr.light-sep
+        p Logramos cambios increibles, contigo
+        .services-box
+          .row.wow.fadeInUp(data-wow-delay='.3s')
+            .col-md-4
+              .media-left
+                span.icon-lightbulb
+              .media-body
+                h3 Reporta actividad
+                p
+                  | Si alguna vez actividad sospechosa en bosques no dudes de reportarlo, asi alguien podra tomar accion.
+            .col-md-4
+              .media-left
+                span.icon-mobile
+              .media-body
+                h3 Compatible
+                p
+                  | Brindaremos soporte a distintas formas de reporte para que puedas informarnos dela forma mas conbeniente posible.
+            .col-md-4
+              .media-left
+                span.icon-compass
+              .media-body
+                h3 Ubicacion es clave
+                p
+                  | Donde ocurren problemas es muy importante para nosotros, asi quien sea que vea el problema sabra donde implementar la solucion.
+    br
+    br
+    br
+    //
+      Some Fune Facts
+      =============================================
+    section#fun-facts
+      .container
+        h2 Abre los ojos
+        hr.light-sep
+        p Hechos reales
+        .row.wow.fadeInUp(data-wow-delay='.3s')
+          .col-lg-3
+            span.icon-sad
+            h2.number.timer 367
+            h4 Personas afectadas
+          .col-lg-3
+            span.icon-compass
+            h2.number.timer 150
+            h4 Hectareas no supervisadas
+          .col-lg-3
+            span.fa.fa-tree
+            h2.number.timer 9121266
+            h4 Arboles afectados por degradacion
+          .col-lg-3
+            span.icon-documents
+            h2.number.timer 10000
+            h4 Datos que no son analizados
+    
+    br
+    br
+    br
+    
+    //
+      Footer
+      =============================================
+    footer
+      .container
+        h1 Actua ahora
+        .social
+          a(href='#')
+            i.fa.fa-facebook.fa-2x
+          a(href='#')
+            i.fa.fa-twitter.fa-2x
+        h6 Encuentranos en facebook y twitter
+    br
+    br
+    br
+    
+    //
+      Contact Us
+      =============================================
+    section#contact
+      .container
+        h2 Contactnos
+        hr.sep
+        p Averigua como ayudarnos a cambiar
+        .col-md-6.col-md-offset-3.wow.fadeInUp(data-wow-delay='.3s')
+          form
+            .form-group
+              input#Name.form-control(type='text', placeholder='Name')
+            .form-group
+              input#Email.form-control(type='text', placeholder='Email')
+            .form-group
+              textarea.form-control(rows='3', placeholder='Message')
+            a.btn-block(href='#') Send
+
+
+    block content
